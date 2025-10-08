@@ -9,13 +9,13 @@
         "pagePath": "pages/index/index",
         "iconPath": "images/nav/home-off.png",
         "selectedIconPath": "images/nav/home-on.png",
-        "text": "首页"
+        "text": "雪场"
       },
       {
         "pagePath": "pages/logs/logs",
-        "iconPath": "images/nav/home-off.png",
-        "selectedIconPath": "images/nav/home-on.png",
-        "text": "首页"
+        "iconPath": "images/nav/fl-off.png",
+        "selectedIconPath": "images/nav/fl-on.png",
+        "text": "购物"
       }
     ]
   },
