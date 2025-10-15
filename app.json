@@ -12,16 +12,24 @@
         "text": "雪场"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/shopping/shopping",
         "iconPath": "images/nav/fl-off.png",
         "selectedIconPath": "images/nav/fl-on.png",
         "text": "购物"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "images/nav/fl-off.png",
+        "selectedIconPath": "images/nav/fl-on.png",
+        "text": "日志"
       }
     ]
   },
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/shopping/shopping",
+    "pages/newpage/newpage"
   ],
   "window": {
     "navigationBarTextStyle": "black",

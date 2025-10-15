@@ -1,0 +1,6 @@
+<!--shopping.wxml-->
+<scroll-view class="scrollarea" scroll-y type="list">
+  <!-- 点击图片触发导航事件 -->
+  <image src="/images/shopping/cap.jpg" mode="widthFix" class="nav-image" bindtap="navigateToNewPage" alt="点击导航到新页面的图片">
+  </image>
+</scroll-view>
