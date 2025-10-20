@@ -1,0 +1,23 @@
+{
+  "name": "jl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/difficultcho/jl.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/difficultcho/jl/issues"
+  },
+  "homepage": "https://github.com/difficultcho/jl#readme",
+  "dependencies": {
+    "@vant/weapp": "^1.11.6"
+  }
+}

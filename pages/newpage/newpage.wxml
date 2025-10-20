@@ -1,7 +1,4 @@
 <!-- 新页面：newpage.wxml -->
-<view class="new-page">
-  <view class="title">这是新页面</view>
-  <view class="content">
-    从右侧滑入的新页面内容
-  </view>
-</view>
+<van-search value="{{ name }}" placeholder="请输入搜索关键词" shape="round" bind:search="bindconfirm" use-right-icon-slot>
+  <van-icon slot="right-icon" name="scan" bind:click="searchscan" />
+</van-search>
