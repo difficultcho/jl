@@ -1,1 +1,24 @@
 /* pages/newpage/newpage.wxss */
+page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+.goods-container {
+  flex: 1;
+  height: 100%;
+}
+.goods-btn {
+  position: absolute;
+  right: 32rpx;
+  bottom: 32rpx;
+}
+.title-class-apifm {
+  word-break: break-all;
+}

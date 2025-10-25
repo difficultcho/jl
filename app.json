@@ -42,6 +42,7 @@
   "lazyCodeLoading": "requiredComponents",
   "usingComponents": {
     "van-search": "@vant/weapp/search/index",
-    "van-icon": "@vant/weapp/icon/index"
+    "van-icon": "@vant/weapp/icon/index",
+    "van-card": "@vant/weapp/card/index"
   }
 }
