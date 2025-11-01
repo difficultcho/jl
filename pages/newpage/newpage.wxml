@@ -5,7 +5,23 @@
 
 <view class="main">
   <scroll-view class="goods-container" scroll-y="true" scroll-top="{{scrolltop}}" wx:if='{{onLoadStatus}}' bindscrolltolower="goodsGoBottom">
-  abc
+    <wxs module="goodsDetailPage">
+    module.exports = {
+      url : function(item) {
+        if (item.supplyType == 'cps_jd') {
+          return '/packageCps/pages/goods-details/cps-jd?id=' + item.id
+        } else if (item.supplyType == 'vop_jd') {
+          return '/pages/goods-details/vop?id=' + item.yyId + '&goodsId=' + item.id
+        } else if (item.supplyType == 'cps_pdd') {
+          return '/packageCps/pages/goods-details/cps-pdd?id=' + item.id
+        } else if (item.supplyType == 'cps_taobao') {
+          return '/packageCps/pages/goods-details/cps-taobao?id=' + item.id
+        } else {
+          return '/pages/goods-details/index?id=' + item.id
+        }
+      }
+    }
+    </wxs>
     <van-card
       wx:for="{{currentGoods}}" wx:key="id"
       price="{{item.minPrice}}"
@@ -16,7 +32,6 @@
       thumb="{{item.pic}}"
       thumb-link="{{ goodsDetailPage.url(item) }}"
     >
-    xyz
       <view wx:if="{{ item.supplyType != 'vop_jd' }}" class="goods-btn" slot="footer">
         <van-icon wx:if="{{ item.propertyIds || item.hasAddition }}" name="add" color="#e64340" size="48rpx" data-id="{{item.id}}" bind:click="addShopCar" />
         <van-icon wx:else name="shopping-cart-o" color="#e64340" size="48rpx" data-id="{{item.id}}" bind:click="addShopCar" />

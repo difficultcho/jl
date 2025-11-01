@@ -19,6 +19,7 @@
   "homepage": "https://github.com/difficultcho/jl#readme",
   "dependencies": {
     "@vant/weapp": "^1.11.6",
-    "apifm-wxapi": "^24.06.19"
+    "apifm-wxapi": "^24.06.19",
+    "wxa-plugin-canvas": "^1.1.12"
   }
 }

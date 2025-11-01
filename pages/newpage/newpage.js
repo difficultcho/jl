@@ -86,7 +86,6 @@ Page({
   },
 
   goodsGoBottom() {
-    console.log('aaaaaaaaa')
     this.data.page++
     this.getGoodsList()
   },
